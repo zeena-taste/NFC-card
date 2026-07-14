@@ -5,7 +5,7 @@
 // ============================================================
 
 const LINKS = {
-  linkedin: "https://www.linkedin.com/in/PLACEHOLDER",
+  linkedin: "https://www.linkedin.com/in/zeena-seory-a17024288/",
   github:   "https://github.com/zeena-taste",
   tovio:    "https://nuviofreelancers.github.io/T.vio_Protfolio/"
 };
