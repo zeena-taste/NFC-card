@@ -58,27 +58,44 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     function showRedirect(target, url) {
-        const popup = document.getElementById('redirect-popup');
-        const targetEl = document.getElementById('redirect-target');
-        const timerEl = document.getElementById('redirect-timer');
+        const mainUi = document.getElementById('main-ui');
+        const screen = document.getElementById('redirect-screen');
+        const targetEl = document.getElementById('redirect-target-inline');
+        const typedEl = document.getElementById('redirect-typed');
+        const countEl = document.getElementById('redirect-countdown');
 
         targetEl.textContent = target;
-        popup.classList.remove('hidden');
-        popup.classList.add('flex');
+        typedEl.textContent = '';
+        countEl.textContent = '';
 
-        let timeLeft = 3;
-        timerEl.textContent = timeLeft;
+        mainUi.classList.add('opacity-0');
+        screen.classList.remove('opacity-0', 'pointer-events-none');
 
-        const interval = setInterval(() => {
-            timeLeft--;
-            timerEl.textContent = timeLeft;
-            if (timeLeft <= 0) {
-                clearInterval(interval);
-                popup.classList.add('hidden');
-                popup.classList.remove('flex');
-                if (url) window.location.href = url;
+        const line = 'REDIRECTING YOU IN...';
+        let ci = 0;
+        const typeIv = setInterval(() => {
+            typedEl.textContent = line.slice(0, ci + 1);
+            ci++;
+            if (ci >= line.length) {
+                clearInterval(typeIv);
+                startCountdown();
             }
-        }, 1000);
+        }, 30);
+
+        function startCountdown() {
+            let timeLeft = 3;
+            countEl.textContent = timeLeft;
+            const iv = setInterval(() => {
+                timeLeft--;
+                if (timeLeft <= 0) {
+                    clearInterval(iv);
+                    countEl.textContent = '0';
+                    if (url) window.location.href = url;
+                } else {
+                    countEl.textContent = timeLeft;
+                }
+            }, 800);
+        }
     }
 
     // ---------- USB Cap ----------

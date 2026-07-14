@@ -122,7 +122,7 @@
 <div class="opacity-0 transition-opacity duration-500 flex flex-col h-full" id="main-ui">
 <div>
 <div class="text-[10px] opacity-70 mb-4">NOW PLAYING</div>
-<div class="font-screen-lg text-screen-lg lcd-text mb-2" id="current-track-title">ZEENA/ZOE</div>
+<div class="font-screen-lg text-screen-lg lcd-text mb-2" id="current-track-title">ZEENA</div>
 <div class="flex items-center gap-2 text-[12px] opacity-80 mb-4">
 <span id="track-index">01</span> / 04
 <span class="material-symbols-outlined text-[14px]">play_arrow</span> 00:00
@@ -141,6 +141,12 @@
 <div class="w-2 h-2 rounded-full bg-tertiary shadow-[0_0_5px_#00e639]"></div>
 READY
 </div>
+</div>
+<!-- On-screen redirect overlay: replaces main-ui content in place, no popup -->
+<div class="absolute inset-0 bg-[#002205] z-20 p-screen-padding flex flex-col justify-center items-start opacity-0 pointer-events-none transition-opacity duration-500" id="redirect-screen">
+<div class="lcd-text mb-3">&gt; OPENING <span id="redirect-target-inline"></span></div>
+<div class="lcd-text mb-3" id="redirect-typed"></div>
+<div class="lcd-text text-[28px]" id="redirect-countdown">3</div>
 </div>
 </div>
 </div>
@@ -196,13 +202,6 @@ READY
   </button>
 </div>
 
-<div class="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-surface-container-high/90 border border-outline-variant p-6 rounded-xl shadow-2xl backdrop-blur-md hidden flex-col items-center gap-4 z-50" id="redirect-popup">
-<span class="material-symbols-outlined text-4xl text-primary animate-pulse">link</span>
-<div class="font-screen-md text-screen-md text-on-surface text-center">
-Redirecting to <span class="text-primary font-bold" id="redirect-target"></span>...
-</div>
-<div class="text-[12px] text-on-surface-variant font-body-md" id="redirect-timer">3</div>
-</div>
 </div>
 
 <script src="config.js"></script>
