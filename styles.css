@@ -1,0 +1,78 @@
+:root {
+    --bg-light: #f5f4f3;
+    --bg-dark: #d8d5d3;
+}
+
+body {
+    background: radial-gradient(ellipse at center, var(--bg-light) 0%, var(--bg-dark) 100%);
+    transition: background 0.15s ease-out;
+}
+
+.brushed-metal {
+    background: linear-gradient(135deg, #e0e0e0 0%, #a0a0a0 50%, #d0d0d0 100%);
+    box-shadow: inset 0 0 20px rgba(255,255,255,0.5), inset 0 0 10px rgba(0,0,0,0.1);
+}
+.glossy-black {
+    background: linear-gradient(to bottom, #2a2a2a, #0a0a0a);
+    box-shadow: inset 0 2px 5px rgba(255,255,255,0.2), inset 0 -2px 5px rgba(0,0,0,0.8);
+}
+.lcd-screen {
+    background-color: #002205;
+    background-image:
+        linear-gradient(rgba(0, 230, 57, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 230, 57, 0.05) 1px, transparent 1px);
+    background-size: 4px 4px;
+    box-shadow: inset 0 0 15px rgba(0,0,0,0.8);
+}
+.lcd-text { text-shadow: 0 0 5px rgba(0, 230, 57, 0.8); }
+
+.recessed-button {
+    background: radial-gradient(circle at center, #d0d0d0, #909090);
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.3), 0 1px 1px rgba(255,255,255,0.5);
+}
+.recessed-button:active {
+    box-shadow: inset 0 4px 8px rgba(0,0,0,0.5);
+    transform: translateY(1px);
+}
+.red-glow { box-shadow: 0 0 10px rgba(255, 50, 50, 0.5); }
+.red-glow:hover { box-shadow: 0 0 20px rgba(255, 50, 50, 0.8); }
+
+/* Screen bezel + jog dial now use a soft ring shadow instead of a hard
+   border-image — border-image ignores border-radius and was drawing a
+   square frame straight through the rounded/circular shapes. */
+.soft-ring {
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.25), 0 0 0 2px rgba(0,0,0,0.15);
+}
+
+@keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+.blinking { animation: blink 1s step-end infinite; }
+
+.cap-transition { transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; }
+.cap-open { transform: translateY(120px); opacity: 0; pointer-events: none; }
+
+@keyframes led-pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
+.led-pulse { animation: led-pulse 2s ease-in-out infinite; }
+
+@keyframes holoshift { 0% { background-position: 0 0; } 100% { background-position: 0 200%; } }
+.holo-strip {
+    background: linear-gradient(180deg, #f5b8d6, #b8d6f5, #f5e2b8, #c8f5b8, #f5b8d6);
+    background-size: 100% 200%;
+    animation: holoshift 5s linear infinite;
+    opacity: 0.85;
+}
+
+/* Volume slider */
+#vol-track { cursor: pointer; touch-action: none; }
+#vol-thumb {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 16px;
+    height: 12px;
+    background: #a0a0a0;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.4);
+    cursor: grab;
+}
+#vol-thumb:active { cursor: grabbing; }

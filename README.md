@@ -44,16 +44,23 @@ placeholder marker, doesn't affect the site if you leave it).
 
 ## 3. Try it locally
 
-You can just double-click `index.html` to preview it in a browser. Some
-browsers block local file downloads (the CV button) when opened this way —
-if that happens, it'll work fine once deployed (step 4), or you can run a
-quick local server:
+**Important:** don't just double-click `index.html`. Opening a page directly
+as a `file://` URL makes most browsers (Chrome especially) block downloads
+for security reasons — so the "DOWNLOAD CV" button and USB cap can look
+completely broken even when `cv.pdf` is right there in the right place.
+This isn't a bug in the site, it's a browser restriction on local files.
+
+Run a tiny local server instead (one command, no install needed if you have
+Python):
 
 ```bash
 # from inside the zeena-mp3 folder
 python3 -m http.server 8000
-# then open http://localhost:8000
+# then open http://localhost:8000 in your browser
 ```
+
+Test the CV button there. It'll also work correctly once actually deployed
+(step 4) — same reason, it's no longer `file://` at that point.
 
 ## 4. Deploy it (free, pick one)
 
