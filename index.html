@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
+<meta name="theme-color" content="#131313"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+<meta name="description" content="zeena — tap to view my work, links and CV."/>
+<!-- Open Graph tags so the link looks good if shared/previewed anywhere -->
+<meta property="og:title" content="zeena.mp3"/>
+<meta property="og:description" content="tap to view my work, links and CV"/>
+<title>WALKMAN NW-ZN1 — zeena</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎧</text></svg>">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;800&amp;family=JetBrains+Mono:wght@500;700&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-container": "#201f1f",
+                      "primary": "#ffb3ad",
+                      "surface": "#131313",
+                      "on-surface": "#e5e2e1",
+                      "primary-fixed-dim": "#ffb3ad",
+                      "inverse-surface": "#e5e2e1",
+                      "inverse-primary": "#b62326",
+                      "primary-fixed": "#ffdad7",
+                      "error": "#ffb4ab",
+                      "secondary": "#c6c6c6",
+                      "inverse-on-surface": "#313030",
+                      "on-secondary-container": "#b8b8b8",
+                      "surface-container-lowest": "#0e0e0e",
+                      "on-error": "#690005",
+                      "on-tertiary-fixed-variant": "#00530e",
+                      "outline": "#aa8986",
+                      "surface-variant": "#353534",
+                      "on-primary-fixed": "#410004",
+                      "on-primary-container": "#ffc4bf",
+                      "on-secondary": "#2f3131",
+                      "on-tertiary": "#003907",
+                      "surface-container-low": "#1c1b1b",
+                      "secondary-container": "#484949",
+                      "error-container": "#93000a",
+                      "surface-tint": "#ffb3ad",
+                      "tertiary-fixed": "#72ff70",
+                      "surface-container-highest": "#353534",
+                      "primary-container": "#b01e23",
+                      "on-tertiary-fixed": "#002203",
+                      "on-tertiary-container": "#00f43e",
+                      "tertiary-container": "#006a15",
+                      "surface-container-high": "#2a2a2a",
+                      "tertiary": "#00e639",
+                      "background": "#131313",
+                      "on-surface-variant": "#e3bebb",
+                      "tertiary-fixed-dim": "#00e639",
+                      "on-background": "#e5e2e1",
+                      "secondary-fixed-dim": "#c6c6c6",
+                      "secondary-fixed": "#e3e2e2",
+                      "on-secondary-fixed": "#1a1c1c",
+                      "on-primary-fixed-variant": "#930012",
+                      "on-secondary-fixed-variant": "#464747",
+                      "outline-variant": "#5a403e",
+                      "on-primary": "#680009",
+                      "surface-dim": "#131313",
+                      "surface-bright": "#393939",
+                      "on-error-container": "#ffdad6"
+              },
+              "borderRadius": {
+                      "DEFAULT": "1rem",
+                      "lg": "2rem",
+                      "xl": "3rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "gutter": "1rem",
+                      "bezel": "1.5rem",
+                      "screen-padding": "1.25rem",
+                      "button-gap": "0.5rem"
+              },
+              "fontFamily": {
+                      "screen-lg-mobile": ["JetBrains Mono"],
+                      "screen-lg": ["JetBrains Mono"],
+                      "label-caps": ["Hanken Grotesk"],
+                      "body-md": ["Hanken Grotesk"],
+                      "screen-md": ["JetBrains Mono"]
+              },
+              "fontSize": {
+                      "screen-lg-mobile": ["20px", { "lineHeight": "28px", "fontWeight": "700" }],
+                      "screen-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-1px", "fontWeight": "700" }],
+                      "label-caps": ["11px", { "lineHeight": "12px", "letterSpacing": "1.5px", "fontWeight": "800" }],
+                      "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                      "screen-md": ["16px", { "lineHeight": "20px", "letterSpacing": "0.5px", "fontWeight": "500" }]
+              }
+            }
+          }
+        }
+    </script>
+<style>
+        .brushed-metal {
+            background: linear-gradient(135deg, #e0e0e0 0%, #a0a0a0 50%, #d0d0d0 100%);
+            box-shadow: inset 0 0 20px rgba(255,255,255,0.5), inset 0 0 10px rgba(0,0,0,0.1);
+        }
+        .glossy-black {
+            background: linear-gradient(to bottom, #2a2a2a, #0a0a0a);
+            box-shadow: inset 0 2px 5px rgba(255,255,255,0.2), inset 0 -2px 5px rgba(0,0,0,0.8);
+        }
+        .lcd-screen {
+            background-color: #002205;
+            background-image: 
+                linear-gradient(rgba(0, 230, 57, 0.05) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 230, 57, 0.05) 1px, transparent 1px);
+            background-size: 4px 4px;
+            box-shadow: inset 0 0 15px rgba(0,0,0,0.8);
+        }
+        .lcd-text { text-shadow: 0 0 5px rgba(0, 230, 57, 0.8); }
+        .recessed-button {
+            background: radial-gradient(circle at center, #d0d0d0, #909090);
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.3), 0 1px 1px rgba(255,255,255,0.5);
+        }
+        .recessed-button:active {
+            box-shadow: inset 0 4px 8px rgba(0,0,0,0.5);
+            transform: translateY(1px);
+        }
+        .red-glow { box-shadow: 0 0 10px rgba(255, 50, 50, 0.5); }
+        .red-glow:hover { box-shadow: 0 0 20px rgba(255, 50, 50, 0.8); }
+        .diamond-cut { border: 2px solid transparent; border-image: linear-gradient(45deg, #fff, #888, #fff, #888) 1; }
+        @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+        .blinking { animation: blink 1s step-end infinite; }
+        .cap-transition { transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; }
+        .cap-open { transform: translateY(120px); opacity: 0; pointer-events: none; }
+        /* subtle LED pulse on the usb drive body while the cap is on */
+        @keyframes led-pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
+        .led-pulse { animation: led-pulse 2s ease-in-out infinite; }
+    </style>
+</head>
+<body class="bg-neutral-200 text-on-surface min-h-screen flex items-center justify-center bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-neutral-100 to-neutral-300">
+
+<!-- ================= HOLOGRAPHIC FOIL STRIP (page edge) ================= -->
+<div class="fixed left-0 top-0 bottom-0 w-3 sm:w-4 z-0" style="background:linear-gradient(180deg,#f5b8d6,#b8d6f5,#f5e2b8,#c8f5b8,#f5b8d6);background-size:100% 200%;animation:holoshift 5s linear infinite;opacity:0.85"></div>
+<style>@keyframes holoshift{0%{background-position:0 0}100%{background-position:0 200%}}</style>
+
+<div class="relative w-full max-w-[320px] mx-auto z-10 flex flex-col items-center drop-shadow-[0_20px_40px_rgba(0,0,0,0.3)] scale-90 sm:scale-100 origin-center transition-transform">
+<!-- Main Device Chassis -->
+<div class="brushed-metal w-full rounded-[40px] rounded-b-none p-bezel pb-8 relative border border-white/20">
+<div class="absolute top-0 left-1/2 -translate-x-1/2 w-[80%] h-4 bg-white/20 rounded-t-full blur-sm"></div>
+<div class="flex justify-between items-center mb-6 px-2">
+<span class="font-screen-lg text-screen-lg text-surface-container-low tracking-widest opacity-80">WALKMAN</span>
+<span class="font-label-caps text-label-caps text-surface-container-low opacity-60">NW-ZN1</span>
+</div>
+<div class="glossy-black p-2 rounded-[2rem] w-[260px] mx-auto mb-8 relative diamond-cut border-2">
+<div class="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent rounded-[2rem] pointer-events-none z-20"></div>
+<div class="lcd-screen rounded-[1.5rem] p-4 font-screen-md text-screen-md text-tertiary h-[280px] flex flex-col justify-between relative overflow-hidden">
+<div class="absolute inset-0 bg-[#002205] z-10 p-screen-padding flex flex-col justify-center transition-opacity duration-500" id="boot-sequence">
+<div class="lcd-text mb-2">&gt; BOOTING...</div>
+<div class="lcd-text blinking w-2 h-4 bg-tertiary"></div>
+</div>
+<div class="opacity-0 transition-opacity duration-500 flex flex-col h-full" id="main-ui">
+<div>
+<div class="text-[10px] opacity-70 mb-4">NOW PLAYING</div>
+<div class="font-screen-lg text-screen-lg lcd-text mb-2" id="current-track-title">ZEENA</div>
+<div class="flex items-center gap-2 text-[12px] opacity-80 mb-4">
+<span id="track-index">01</span> / 04
+<span class="material-symbols-outlined text-[14px]">play_arrow</span> 00:00
+</div>
+<div class="w-full h-1 bg-tertiary/20 rounded-full mb-6 relative">
+<div class="absolute left-0 top-0 h-full w-[10%] bg-tertiary shadow-[0_0_5px_#00e639] rounded-full"></div>
+</div>
+</div>
+<div class="text-[12px] space-y-1 opacity-60" id="tracklist">
+<div class="flex gap-2 text-tertiary opacity-100" data-track="0"><span>01</span> <span>ZEENA</span></div>
+<div class="flex gap-2" data-track="1"><span>02</span> <span>LINKEDIN</span></div>
+<div class="flex gap-2" data-track="2"><span>03</span> <span>GITHUB</span></div>
+<div class="flex gap-2" data-track="3"><span>04</span> <span>TOVIO</span> <span class="material-symbols-outlined text-[10px]">arrow_outward</span></div>
+</div>
+<div class="mt-auto flex items-center gap-2 text-[10px]">
+<div class="w-2 h-2 rounded-full bg-tertiary shadow-[0_0_5px_#00e639]"></div>
+READY
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-col items-center gap-6">
+<div class="flex justify-between w-[200px] font-label-caps text-label-caps text-surface-container-low opacity-70">
+<span>BACK</span>
+<span>ZAP</span>
+</div>
+<div class="relative w-[140px] h-[140px] rounded-full glossy-black diamond-cut border flex items-center justify-center">
+<button class="absolute left-2 w-8 h-12 flex items-center justify-center text-secondary hover:text-white transition-colors" id="btn-back">
+<span class="material-symbols-outlined">fast_rewind</span>
+</button>
+<button class="absolute right-2 w-8 h-12 flex items-center justify-center text-secondary hover:text-white transition-colors" id="btn-zap">
+<span class="material-symbols-outlined">fast_forward</span>
+</button>
+<button class="w-[70px] h-[70px] rounded-full recessed-button flex items-center justify-center relative z-10 red-glow transition-shadow" id="btn-select">
+<span class="font-label-caps text-label-caps text-surface-container-lowest font-bold">SELECT</span>
+</button>
+</div>
+<div class="w-[200px] flex items-center justify-between opacity-70 mt-4 mb-2">
+<span class="font-label-caps text-[10px] tracking-widest text-surface-container-low">VOL</span>
+<div class="w-24 h-1.5 bg-surface-container-low rounded-full relative">
+<div class="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-3 bg-[#a0a0a0] rounded-sm shadow-sm border border-black/20"></div>
+</div>
+<div class="flex items-center gap-1 font-label-caps text-[10px] tracking-widest text-surface-container-low">
+<span class="text-[8px]">◀</span> HOLD
+</div>
+</div>
+</div>
+</div>
+
+<!-- ================= USB SECTION (bottom) ================= -->
+<div class="relative w-full h-[120px]">
+  <!-- Hidden base underneath the cap: this is what's revealed when the cap slides off -->
+  <div class="absolute top-0 left-0 w-full h-[100px] flex flex-col items-center justify-start pt-2 -z-10">
+    <!-- Custom SVG USB thumb-drive graphic (swap for a photo if you prefer, see README) -->
+    <svg viewBox="0 0 48 70" class="h-16 w-12 mb-1" xmlns="http://www.w3.org/2000/svg">
+      <rect x="12" y="0" width="24" height="30" rx="2" fill="#c9c9c9" stroke="#8a8a8a" stroke-width="1"/>
+      <rect x="15" y="4" width="18" height="3" fill="#9a9a9a"/>
+      <rect x="15" y="10" width="18" height="3" fill="#9a9a9a"/>
+      <rect x="15" y="16" width="18" height="3" fill="#9a9a9a"/>
+      <rect x="2" y="28" width="44" height="38" rx="8" fill="#e2e2e2" stroke="#a3a3a3" stroke-width="1"/>
+      <rect x="8" y="36" width="32" height="5" rx="2" fill="#bdbdbd"/>
+      <circle cx="24" cy="54" r="3" fill="#00e639" class="led-pulse"/>
+    </svg>
+    <a id="cv-download" href="assets/cv.pdf" download class="font-label-caps text-[10px] tracking-widest text-neutral-600 border border-neutral-400 rounded-full px-3 py-1 hover:bg-neutral-200 transition-colors z-30 relative cursor-pointer scale-75 mt-1 no-underline">
+      DOWNLOAD CV
+    </a>
+  </div>
+  <!-- Removable Cap -->
+  <button class="w-full h-[80px] brushed-metal rounded-b-[40px] border border-white/20 border-t-black/50 shadow-lg cap-transition relative flex items-center justify-center z-20 group" id="usb-cap">
+    <div class="absolute top-0 w-[60px] h-[10px] bg-black/80 rounded-b-lg"></div>
+    <div class="mt-6 font-label-caps text-label-caps text-surface-container-low opacity-60 group-hover:opacity-100 transition-opacity flex items-center gap-1">
+      <span class="material-symbols-outlined text-[14px]">arrow_downward</span> CLICK CAP FOR CV
+    </div>
+  </button>
+</div>
+
+<!-- Redirect Popup -->
+<div class="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-surface-container-high/90 border border-outline-variant p-6 rounded-xl shadow-2xl backdrop-blur-md hidden flex-col items-center gap-4 z-50" id="redirect-popup">
+<span class="material-symbols-outlined text-4xl text-primary animate-pulse">link</span>
+<div class="font-screen-md text-screen-md text-on-surface text-center">
+Redirecting to <span class="text-primary font-bold" id="redirect-target"></span>...
+</div>
+<div class="text-[12px] text-on-surface-variant font-body-md" id="redirect-timer">3</div>
+</div>
+</div>
+
+<!-- config.js must load BEFORE this script — it defines the LINKS object -->
+<script src="config.js"></script>
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Boot Sequence
+            setTimeout(() => {
+                document.getElementById('boot-sequence').innerHTML = `
+                    <div class="lcd-text mb-2">> LOADING...</div>
+                    <div class="lcd-text mb-2">> TRACKS... 4</div>
+                    <div class="lcd-text blinking w-2 h-4 bg-tertiary mt-2"></div>
+                `;
+                setTimeout(() => {
+                    document.getElementById('boot-sequence').classList.add('opacity-0');
+                    setTimeout(() => {
+                        document.getElementById('boot-sequence').style.display = 'none';
+                        document.getElementById('main-ui').classList.remove('opacity-0');
+                    }, 500);
+                }, 1500);
+            }, 1500);
+
+            // Track Navigation Logic — pulls real URLs from config.js's LINKS object
+            const tracks = [
+                { title: 'ZEENA', isLink: false, url: null },
+                { title: 'LINKEDIN', isLink: true, url: LINKS.linkedin },
+                { title: 'GITHUB', isLink: true, url: LINKS.github },
+                { title: 'TOVIO', isLink: true, url: LINKS.tovio }
+            ];
+            let currentTrack = 0;
+            const tracklistEl = document.getElementById('tracklist');
+            const titleEl = document.getElementById('current-track-title');
+            const indexEl = document.getElementById('track-index');
+
+            function updateUI() {
+                Array.from(tracklistEl.children).forEach((el, idx) => {
+                    if (idx === currentTrack) {
+                        el.classList.add('text-tertiary', 'opacity-100');
+                        el.classList.remove('opacity-60');
+                    } else {
+                        el.classList.remove('text-tertiary', 'opacity-100');
+                        el.classList.add('opacity-60');
+                    }
+                });
+                titleEl.textContent = tracks[currentTrack].title;
+                indexEl.textContent = `0${currentTrack + 1}`;
+            }
+
+            document.getElementById('btn-zap').addEventListener('click', () => {
+                currentTrack = (currentTrack + 1) % tracks.length;
+                updateUI();
+            });
+            document.getElementById('btn-back').addEventListener('click', () => {
+                currentTrack = (currentTrack - 1 + tracks.length) % tracks.length;
+                updateUI();
+            });
+
+            document.getElementById('btn-select').addEventListener('click', () => {
+                if (tracks[currentTrack].isLink) {
+                    showRedirect(tracks[currentTrack].title, tracks[currentTrack].url);
+                }
+            });
+
+            function showRedirect(target, url) {
+                const popup = document.getElementById('redirect-popup');
+                const targetEl = document.getElementById('redirect-target');
+                const timerEl = document.getElementById('redirect-timer');
+
+                targetEl.textContent = target;
+                popup.classList.remove('hidden');
+                popup.classList.add('flex');
+
+                let timeLeft = 3;
+                timerEl.textContent = timeLeft;
+
+                const interval = setInterval(() => {
+                    timeLeft--;
+                    timerEl.textContent = timeLeft;
+                    if (timeLeft <= 0) {
+                        clearInterval(interval);
+                        popup.classList.add('hidden');
+                        popup.classList.remove('flex');
+                        if (url) window.location.href = url; // <-- actual redirect happens here
+                    }
+                }, 1000);
+            }
+
+            // USB Cap Interaction
+            document.getElementById('usb-cap').addEventListener('click', function() {
+                this.classList.toggle('cap-open');
+            });
+        });
+    </script>
+</body></html>
